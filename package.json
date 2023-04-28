@@ -21,10 +21,13 @@
     "cypress": "^10.0.3",
     "gatsby": "^4.5.4",
     "gatsby-plugin-manifest": "^4.14.0",
+    "install": "^0.13.0",
+    "or": "^0.2.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
-    "react-slick": "^0.29.0"
+    "react-slick": "^0.29.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "gatsby-plugin-netlify": "^5.0.0",

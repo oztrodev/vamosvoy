@@ -1,5 +1,7 @@
 module.exports = {
   siteMetadata: {
+    // title: `VamosVoy.com es un nuevo ecosistema de trabajo que ofrece vitrinas virtuales para emprendedores y negocios.`,
+    // siteUrl: `https://vamosvoy.com`,
     title: `Gatsby Sydney Ecommerce Theme`,
     siteUrl: `https://jamm.matter.design`,
   },
