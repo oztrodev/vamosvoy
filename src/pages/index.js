@@ -42,10 +42,10 @@ const IndexPage = () => {
           Te ayudamos a crear tu tienda virtual en{' '}
           <span className={styles.gold}>VamosVoy.com</span>
         </p>
-        {/* <p>
+        { <p>
           wear by <span className={styles.gold}>sunspel</span> and{' '}
           <span className={styles.gold}>scotch&soda</span>
-        </p> */}
+        </p>}
       </div>
 
       {/* Collection Container */}
