@@ -30,22 +30,22 @@ const IndexPage = () => {
       <Hero
         maxWidth={'500px'}
         image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
+        title={'Crea tu Tienda Virtual'}
+        subtitle={'Muestra al mundo lo que vendes'}
+        ctaText={'Registrate'}
         ctaAction={goToShop}
       />
 
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
+          Te ayudamos a crear tu tienda virtual en{' '}
+          <span className={styles.gold}>VamosVoy.com</span>
         </p>
-        <p>
+        {/* <p>
           wear by <span className={styles.gold}>sunspel</span> and{' '}
           <span className={styles.gold}>scotch&soda</span>
-        </p>
+        </p> */}
       </div>
 
       {/* Collection Container */}
