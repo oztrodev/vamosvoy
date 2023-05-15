@@ -28,25 +28,22 @@ const Contact = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles.section}>
-        <h4>Send Us A Message</h4>
+        <h4>Envianos un Mensaje</h4>
         <p>
-          Our Customer Service team are here for all enquiries Monday to Friday,
-          9am - 5pm AEDT (Australian Eastern Daylight Savings Time).
+          Estaremos encantados de estar en contacto contigo
         </p>
-        <p>We look forward to hearing from you.</p>
       </div>
 
       <div className={styles.section}>
-        <h4>Phone</h4>
-        <p>+1 424 280 4971</p>
-        <p>Monday to Friday - 9am - 5pm AEDT</p>
+        <h4>Whatsapp</h4>
+        <p>+56 9 8382 0039</p>
       </div>
 
       <div className={styles.section}>
         <h4>Email</h4>
         <p>
-          You can email our Customer Service team at customerservice@example.com
-          or via the contact form below:
+          Puedes contactarnos al correo vamosvoy@gmail.com
+          o a través del siguiente formulario:
         </p>
       </div>
 
@@ -58,7 +55,7 @@ const Contact = (props) => {
               value={contactForm.name}
               handleChange={(id, e) => handleChange(id, e)}
               type={'text'}
-              labelName={'Full Name'}
+              labelName={'Nombre y Apellido'}
               required
             />
             <FormInputField
@@ -66,7 +63,7 @@ const Contact = (props) => {
               value={contactForm.phone}
               handleChange={(id, e) => handleChange(id, e)}
               type={'number'}
-              labelName={'Phone Number'}
+              labelName={'Celular'}
               required
             />
             <FormInputField
@@ -83,7 +80,7 @@ const Contact = (props) => {
                 value={contactForm.comment}
                 handleChange={(id, e) => handleChange(id, e)}
                 type={'textarea'}
-                labelName={'Comments / Questions'}
+                labelName={'Comentario o Consulta'}
                 required
               />
             </div>
@@ -93,7 +90,7 @@ const Contact = (props) => {
             level={'primary'}
             type={'buttonSubmit'}
           >
-            submit
+            Enviar
           </Button>
         </form>
       </div>

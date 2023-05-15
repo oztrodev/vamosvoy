@@ -30,21 +30,21 @@ const IndexPage = () => {
       <Hero
         maxWidth={'500px'}
         image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
+        title={'Bienvenido a VamosVoy'}
+        subtitle={'La plataforma para impulsar tu negocio y encontrar lo que necesitas.'}
+        ctaText={'Tienda'}
         ctaAction={goToShop}
       />
 
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
+        Creamos un ecosistema de trabajo donde emprendedores y negocios pueden mostrar sus{' '}
+          <span className={styles.gold}>productos y servicios</span>
         </p>
         <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
+          de manera  <span className={styles.gold}>eficiente</span> y{' '}
+          <span className={styles.gold}>atractiva</span>
         </p>
       </div>
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import * as styles from './shop.module.css';
+import * as styles from './tienda.module.css';
 
 import Banner from '../components/Banner';
 import Breadcrumbs from '../components/Breadcrumbs';

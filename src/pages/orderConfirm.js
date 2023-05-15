@@ -39,10 +39,10 @@ const OrderConfirmPage = (props) => {
             />
 
             <ActionCard
-              title={'Contact Us'}
+              title={'Contacto'}
               icon={'phone'}
               subtitle={'Reach out to us'}
-              link={'/support#contact'}
+              link={'/soporte#contact'}
             />
           </div>
         </div>

@@ -12,10 +12,10 @@
     { "value": "mandarin", "label": "普通话" }
   ],
   "social": {
-    "facebook": "https://www.facebook.com/MatterDesign/",
-    "instagram": "https://www.instagram.com/p/CVwMlChIWmW",
-    "twitter": "https://twitter.com/hellomatter",
-    "youtube": "https://www.youtube.com/channel/UCEOu94Haa--QmltsSawflXg"
+    "facebook": "http://lyksoomu.com/1Bqzy",
+    "instagram": "http://lyksoomu.com/1Br0n",
+    "twitter": "http://lyksoomu.com/1Bqzy",
+    "youtube": "http://lyksoomu.com/1Br0n"
   },
   "paymentOptions": {
     "visa": true,
@@ -27,88 +27,84 @@
       "subTitle": "Info",
       "links": [
         {
-          "text": "About Us",
-          "link": "/about"
+          "text": "Nosotros",
+          "link": "/nosotros"
         },
         {
-          "text": "Journal",
+          "text": "Blog",
           "link": "/blog"
         },
         {
-          "text": "Privacy Policy",
-          "link": "/support#policy"
+          "text": "Políticas de Privacidad",
+          "link": "/soporte#politicas"
         }
       ]
     },
     {
-      "subTitle": "Support",
+      "subTitle": "Soporte",
       "links": [
         {
-          "text": "FAQ",
-          "link": "/faq"
+          "text": "Preguntas Frecuentes",
+          "link": "/preguntas-frecuentes"
         },
         {
-          "text": "Contact Us",
-          "link": "/support#contact"
+          "text": "Contáctanos",
+          "link": "/soporte#contact"
         },
         {
-          "text": "Shipping & Returns",
-          "link": "/support#returns"
-        },
-        {
-          "text": "How to use this theme",
-          "link": "/how-to-use"
+          "text": "Compras y Devoluciones",
+          "link": "/soporte#compras"
         }
       ]
     }
   ],
   "headerLinks": [
     {
-      "menuLabel": "Shop",
-      "menuLink": "/shop",
+      "menuLabel": "Tienda",
+      "menuLink": "/tienda",
       "category": [
         {
-          "categoryLabel": "woman",
+          "categoryLabel": "Mujer",
           "submenu": [
             {
-              "menuLabel": "All clothing",
+              "menuLabel": "Zapatos",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
+              "menuLabel": "Poleras y Blusas",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "jackets",
+              "menuLabel": "Chaquetas",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "trousers",
+              "menuLabel": "Lenceria",
               "menuLink": "/shop"
             }
           ]
         },
         {
-          "categoryLabel": "men",
+          "categoryLabel": "Hombres",
           "submenu": [
             {
-              "menuLabel": "All clothing",
+              "menuLabel": "Zapatos",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
+              "menuLabel": "Poleras y Polerones",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "jackets",
+              "menuLabel": "Chaquetas",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "trousers",
+              "menuLabel": "Pantalones",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "pants",
+              "menuLabel": "Ropa Interior",
               "menuLink": "/shop"
             }
           ]
@@ -117,11 +113,11 @@
           "categoryLabel": "accessories",
           "submenu": [
             {
-              "menuLabel": "caps & scarves",
+              "menuLabel": "Gorros & Bufandas",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "bags",
+              "menuLabel": "Mochilas y Carteras",
               "menuLink": "/shop"
             }
           ]
@@ -129,13 +125,13 @@
       ]
     },
     {
-      "menuLabel": "journal",
+      "menuLabel": "Blog",
       "menuLink": "/blog",
       "category": null
     },
     {
-      "menuLabel": "About",
-      "menuLink": "/about",
+      "menuLabel": "Nosotros",
+      "menuLink": "/nosotros",
       "category": null
     }
   ],

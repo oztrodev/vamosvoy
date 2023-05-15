@@ -1,47 +1,46 @@
 import React, { useState, useEffect } from 'react';
 import { navigate } from 'gatsby';
-import * as styles from './support.module.css';
+import * as styles from './soporte.module.css';
 
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
 import Layout from '../components/Layout/Layout';
 import ThemeLink from '../components/ThemeLink';
-import Policy from '../components/Policy';
+import Politicas from '../components/Politicas';
+import Compras from '../components/Compras';
+import Seguridad from '../components/Seguridad';
+import Terminos from '../components/Terminos';
 import Container from '../components/Container';
 
-const SupportPage = (props) => {
+const SoportePage = (props) => {
   const subpages = [
-    { title: 'Shipping', key: 'shipping' },
-    { title: 'Returns', key: 'returns' },
-    { title: 'Payments & Security', key: 'payments' },
-    { title: 'Terms & Conditions', key: 'terms' },
-    { title: 'Contact Us', key: 'contact' },
-    { title: 'Privacy Policy', key: 'policy' },
+    { title: 'Compras', key: 'compras' },
+    { title: 'Políticas de Privacidad', key: 'politicas' },
+    { title: 'Seguridad', key: 'seguridad' },
+    { title: 'Contacto', key: 'contact' },
+    { title: 'Terminos y Condiciones', key: 'terminos' },
   ];
 
-  const [current, setCurrent] = useState(subpages[4]);
+  const [current, setCurrent] = useState(subpages[3]);
 
   const renderElement = (key) => {
     let tempElement = <React.Fragment />;
 
     switch (key) {
+      case 'compras':
+        tempElement = <Compras />;
+        break;
+      case 'politicas':
+        tempElement = <Politicas />;
+        break;
+      case 'seguridad':
+        tempElement = <Seguridad />;
+        break;
       case 'contact':
         tempElement = <Contact />;
         break;
-      case 'policy':
-        tempElement = <Policy />;
-        break;
-      case 'shipping':
-        tempElement = <Policy />;
-        break;
-      case 'returns':
-        tempElement = <Policy />;
-        break;
-      case 'payments':
-        tempElement = <Policy />;
-        break;
-      case 'terms':
-        tempElement = <Policy />;
+      case 'terminos':
+        tempElement = <Terminos />;
         break;
       default:
         break;
@@ -63,7 +62,7 @@ const SupportPage = (props) => {
       }
     }
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    //  eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.location]);
 
   return (
@@ -82,11 +81,11 @@ const SupportPage = (props) => {
             return (
               <ThemeLink
                 onClick={(e) => {
-                  navigate(`/support#${details.key}`);
+                  navigate(`/soporte#${details.key}`);
                 }}
                 key={details.key}
                 isActive={current.key === details.key}
-                to={`/support#${details.key}`}
+                to={`/soporte#${details.key}`}
               >
                 {details.title}
               </ThemeLink>
@@ -115,4 +114,4 @@ const SupportPage = (props) => {
   );
 };
 
-export default SupportPage;
+export default SoportePage;

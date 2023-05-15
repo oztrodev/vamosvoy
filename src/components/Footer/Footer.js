@@ -16,7 +16,7 @@ const Footer = (prop) => {
   const subscribeHandler = (e) => {
     e.preventDefault();
     setEmail('');
-    console.log('Subscribe this email: ', email);
+    console.log('Aquí está nuestro correo: ', email);
   };
 
   const handleSocialClick = (platform) => {
@@ -69,10 +69,9 @@ const Footer = (prop) => {
             })}
             <div className={styles.newsLetter}>
               <div className={styles.newsLetterContent}>
-                <span className={styles.linkTitle}>Newsletter</span>
+                <span className={styles.linkTitle}>Informaciones</span>
                 <p className={styles.promoMessage}>
-                  Get 15% off your first purchase! Plus, be the first to know
-                  about sales, new product launches and exclusive offers!
+                  ¡Deja tu correo y recibe GRATIS un libro sorpresa! Únete a nuestra comunidad y descubre lo que VamosVoy tiene para ti. 📚✨💌
                 </p>
                 <form
                   className={styles.newsLetterForm}
@@ -135,13 +134,13 @@ const Footer = (prop) => {
       <div className={styles.contentBottomContainer}>
         <Container size={'large'} spacing={'min'}>
           <div className={styles.contentBottom}>
-            <div className={styles.settings}>
+            {/* <div className={styles.settings}>
               <Dropdown
                 label={'Country/Region'}
                 optionList={Config.currencyList}
               />
               <Dropdown label={'Language'} optionList={Config.languageList} />
-            </div>
+            </div> */}
             <div className={styles.copyrightContainer}>
               <div className={styles.creditCardContainer}>
                 {Config.paymentOptions.amex && (
@@ -168,12 +167,8 @@ const Footer = (prop) => {
               </div>
               <span>
                 {new Date().getFullYear()} (c) . Built by{' '}
-                <Button target={true} href="https://www.matterdesign.com.au/">
-                  Matter.
-                </Button>{' '}
-                Powered by{' '}
-                <Button target={true} href="https://jamm.matter.design/">
-                  JAMM.™
+                <Button target={true} href="https://www.vamosvoy.com/">
+                  VamosVoy.com
                 </Button>
               </span>
             </div>

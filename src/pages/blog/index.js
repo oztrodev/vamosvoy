@@ -19,10 +19,10 @@ const BlogPage = (props) => {
         <Hero
           maxWidth={'400px'}
           image={'/blogCover.png'}
-          title={`The new standard of Closing`}
-          ctaLink={'read story'}
+          title={`6 consejos para aumentar tus ventas`}
+          ctaLink={'Leer'}
           ctaTo={'/blog/sample'}
-          header={'design'}
+          header={'blog'}
         />
 
         <div className={styles.navContainer}>
@@ -30,31 +30,31 @@ const BlogPage = (props) => {
             onClick={() => navigate('/blog/sample')}
             to={'/blog/sample'}
           >
-            All Posts
+            Todos
           </ThemeLink>
           <ThemeLink
             onClick={() => navigate('/blog/sample')}
             to={'/blog/sample'}
           >
-            Design
+            Marketing
           </ThemeLink>
           <ThemeLink
             onClick={() => navigate('/blog/sample')}
             to={'/blog/sample'}
           >
-            Collaboration
+            Programación
           </ThemeLink>
           <ThemeLink
             onClick={() => navigate('/blog/sample')}
             to={'/blog/sample'}
           >
-            Interview
+            Ventas
           </ThemeLink>
           <ThemeLink
             onClick={() => navigate('/blog/sample')}
             to={'/blog/sample'}
           >
-            News
+            Inteligencia Artificial
           </ThemeLink>
         </div>
 
