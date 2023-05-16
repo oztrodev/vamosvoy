@@ -1,43 +1,43 @@
 [
     {
-        "title": "The new standard of Opening and Closing",
-        "category": "design",
-        "alt": "blog new standard of closing",
+        "title": "6 Consejos para Aumentar tus Ventas y Impulsar tu Negocio",
+        "category": "ventas",
+        "alt": "Aumenta tus Ventas",
         "image": "/blogs/blog1.png",
-        "link": "/blog/sample",
-        "excerpt": "London-based seasonal British flowers and UK producers in her beautiful and sustainable creations. This season, we worked with Flora to style Sunspel stores for Christmas, for which she produced eye-catching sustainably sourced wreaths."
+        "link": "/blog/6-consejos-para-aumentar-tus-ventas",
+        "excerpt": "Aumentar las ventas es uno de los principales objetivos de cualquier empresa. Para lograrlo, es necesario implementar estrategias efectivas que impulsen el crecimiento y generen más ingresos. En este blog, te presentaremos seis consejos clave que te ayudarán a aumentar tus ventas y llevar tu negocio al siguiente nivel."
     },
     {
-        "title": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "category": "design",
-        "alt": "blog new standard of closing",
+        "title": "Marca personal vs. marca empresarial: Diferencias, similitudes y cómo hacerlas trabajar juntas.",
+        "category": "marketing",
+        "alt": "Marca Personal V/S Marca Empresarial",
         "image": "/blogs/blog2.png",
         "link": "/blog/sample",
-        "excerpt": "London-based seasonal British flowers and UK producers in her beautiful and sustainable creations. This season, we worked with Flora to style Sunspel stores for Christmas, for which she produced eye-catching sustainably sourced wreaths."
+        "excerpt": "En el mundo empresarial, tanto la marca personal como la marca empresarial son fundamentales para el éxito. La marca personal se refiere a la imagen que una persona proyecta, mientras que la marca empresarial se refiere a la imagen de una empresa. En este blog, exploraremos las diferencias y similitudes entre la marca personal y la marca empresarial y cómo hacerlas trabajar juntas."
     },
     {
-        "title": "It is a long established fact that a reader by the readable",
-        "category": "design",
-        "alt": "blog new standard of closing",
+        "title": "Cómo potenciar tu marca en la era digital",
+        "category": "marketing",
+        "alt": "Cómo potenciar tu marca en la era digital",
+        "image": "/blogs/blog3.png",
+        "link": "/blog/como-potenciar-tu-marca-en-la-era-digital",
+        "excerpt": "En la era digital, las redes sociales se han convertido en una herramienta fundamental en la estrategia de branding de cualquier empresa. Las redes sociales ofrecen una plataforma para conectarse con los clientes, construir una comunidad y fortalecer la identidad empresarial. En este blog, exploraremos estrategias de branding en redes sociales y cómo potenciar tu marca en la era digital."
+    },
+    {
+        "title": "Claves para crear una imagen de marca impactante y memorable",
+        "category": "marketing",
+        "alt": "Claves para crear una imagen de marca impactante y memorable",
         "image": "/blogs/blog3.png",
         "link": "/blog/sample",
-        "excerpt": "London-basedsonal British flowers and UK producers in her beautiful and sustainable creations. This season, we worked with Flora to style Sunspel stores for Christmas, for which she produced eye-catching sustainably sourced wreaths."
+        "excerpt": "El diseño de un logotipo e identidad visual es una parte esencial en la construcción de una marca sólida y reconocible. Un buen diseño puede hacer que una marca se destaque y sea memorable para los clientes. En este blog, exploraremos las claves para crear una imagen de marca impactante y memorable a través del diseño de logotipo e identidad visual"
     },
     {
-        "title": "It is a long establishable",
-        "category": "design",
-        "alt": "blog new standard of closing",
-        "image": "/blogs/blog3.png",
-        "link": "/blog/sample",
-        "excerpt": "London-based floral designer Flora Fricker champions seasonal British flowers and UK producers in her beautiful and sustainable creations. This season, we worked with Flora to style Sunspel stores for Christmas, for which she produced eye-catching sustainably sourced wreaths."
-    },
-    {
-        "title": "It is a long estab the readable",
-        "category": "design",
-        "alt": "blog new standard of closing",
+        "title": "Cómo utilizar la narrativa para conectar con tu audiencia y fortalecer tu marca",
+        "category": "marketing",
+        "alt": "Cómo utilizar la narrativa para conectar con tu audiencia y fortalecer tu marca",
         "image": "/blogs/blog2.png",
-        "link": "/blog/sample",
-        "excerpt": "Loproducers in her beautiful and sustainable creations. This season, we worked with Flora to style Sunspel stores for Christmas, for which she produced eye-catching sustainably sourced wreaths."
+        "link": "/blog/como-utilizar-la-narrativa-para-conectar-con-tu-audiencia-y-fortalecer-tu-marca",
+        "excerpt": "El storytelling o la narración de historias se ha convertido en una herramienta cada vez más importante en la construcción de una marca sólida. A través de la narrativa, las empresas pueden conectar con su audiencia, crear una conexión emocional y fortalecer su identidad empresarial. En este blog, exploraremos el poder del storytelling y cómo utilizarlo para construir una marca sólida"
     },
     {
         "title": "The new standard of Opening and Closing",
@@ -48,19 +48,19 @@
         "excerpt": "London-based floral tish flowers and UK producers in her beautiful and sustainable creations. This season, we worked with Flora to style Sunspel stores for Christmas, for which she produced eye-catching sustainably sourced wreaths."
     },
     {
-        "title": "It is a long established fact that a reader by the readable",
+        "title": "Los pilares fundamentales para crear una identidad empresarial exitosa",
         "category": "design",
-        "alt": "blog new standard of closing",
+        "alt": "Los pilares fundamentales para crear una identidad empresarial exitosa",
         "image": "/blogs/blog2.png",
-        "link": "/blog/sample",
-        "excerpt": "London-based floral designer Flora Fricker champions seasonal British flowers and UK producers in her beautiful and sustainable creations. This season, we worked with Flora to style Sunspel stores for Christmas, for which she produced eye-catching sustainably sourced wreaths."
+        "link": "/blog/los-pilares-fundamentales-para-crear-una-identidad-empresarial-exitosa",
+        "excerpt": "La construcción de una marca sólida es fundamental para el éxito de cualquier empresa. Una marca sólida no solo ayuda a diferenciarse de la competencia, sino que también crea lealtad y confianza en los clientes. En este blog, exploraremos los pilares fundamentales para crear una identidad empresarial exitosa."
     },
     {
-        "title": "It is a long et a reader by the readable t is a long et a reader by the rea",
-        "category": "design",
-        "alt": "blog new standard of closing",
+        "title": "La Inteligencia Artificial y el Futuro de la Conducción Autónoma",
+        "category": "IA",
+        "alt": "La Inteligencia Artificial y el Futuro de la Conducción Autónoma",
         "image": "/blogs/blog2.png",
-        "link": "/blog/sample",
-        "excerpt": "London-bs and UK producers in her beautiful and sustainable creations. This season, we worked with Flora to style Sunspel stores for Christmas, for which she produced eye-catching sustainably sourced wreaths."
+        "link": "/blog/la-inteligencia-artificial-y-el-futuro-de-la-conduccion-autonoma",
+        "excerpt": "En los últimos años, la Inteligencia Artificial (IA) ha revolucionado muchos aspectos de nuestra vida diaria, y uno de los campos más prometedores donde ha dejado su huella es la conducción autónoma. Los avances en IA han llevado a la creación de vehículos capaces de conducirse por sí mismos, cambiando radicalmente la forma en que nos movemos. En este blog, exploraremos el papel de la Inteligencia Artificial en el futuro de la conducción autónoma y su impacto en la sociedad."
     }
   ]

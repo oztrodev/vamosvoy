@@ -21,7 +21,7 @@ const BlogPage = (props) => {
           image={'/blogCover.png'}
           title={`6 consejos para aumentar tus ventas`}
           ctaLink={'Leer'}
-          ctaTo={'/blog/sample'}
+          ctaTo={'/blog/6-consejos-para-aumentar-tus-ventas'}
           header={'blog'}
         />
 
