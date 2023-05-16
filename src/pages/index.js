@@ -31,7 +31,7 @@ const IndexPage = () => {
         maxWidth={'500px'}
         image={'/banner1.png'}
         title={'VamosVoy'}
-        subtitle={'La plataforma para impulsar tu negocio y encontrar lo que necesitas.'}
+        subtitle={'La plataforma para impulsar tu negocio y encontrar lo que necesitas'}
         ctaText={'Tienda'}
         ctaAction={goToShop}
       />
