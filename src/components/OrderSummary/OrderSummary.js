@@ -65,7 +65,7 @@ const OrderSummary = (props) => {
           checkout
         </Button>
         <div className={styles.linkContainer}>
-          <Link to={'/shop'}>CONTINUE SHOPPING</Link>
+          <Link to={'/tienda'}>CONTINUE COMPRANDO</Link>
         </div>
       </div>
     </div>

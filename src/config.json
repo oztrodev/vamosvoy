@@ -68,19 +68,19 @@
           "submenu": [
             {
               "menuLabel": "Zapatos",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             },
             {
               "menuLabel": "Poleras y Blusas",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             },
             {
               "menuLabel": "Chaquetas",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             },
             {
               "menuLabel": "Lenceria",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             }
           ]
         },
@@ -89,23 +89,23 @@
           "submenu": [
             {
               "menuLabel": "Zapatos",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             },
             {
               "menuLabel": "Poleras y Polerones",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             },
             {
               "menuLabel": "Chaquetas",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             },
             {
               "menuLabel": "Pantalones",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             },
             {
               "menuLabel": "Ropa Interior",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             }
           ]
         },
@@ -114,11 +114,11 @@
           "submenu": [
             {
               "menuLabel": "Gorros & Bufandas",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             },
             {
               "menuLabel": "Mochilas y Carteras",
-              "menuLink": "/shop"
+              "menuLink": "/tienda"
             }
           ]
         }

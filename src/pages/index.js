@@ -21,7 +21,7 @@ const IndexPage = () => {
   const blogData = generateMockBlogData(3);
 
   const goToShop = () => {
-    navigate('/shop');
+    navigate('/tienda');
   };
 
   return (
@@ -59,7 +59,7 @@ const IndexPage = () => {
       {/* New Arrivals */}
       <div className={styles.newArrivalsContainer}>
         <Container>
-          <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
+          <Title name={'New Arrivals'} link={'/tienda'} textLink={'view all'} />
           <ProductCardGrid
             spacing={true}
             showSlider
@@ -80,8 +80,8 @@ const IndexPage = () => {
             miniImageAlt={'mini highlight image'}
             title={'Luxury Knitwear'}
             description={`This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife`}
-            textLink={'shop now'}
-            link={'/shop'}
+            textLink={'comprar ahora'}
+            link={'/tienda'}
           />
         </Container>
       </div>
@@ -90,17 +90,17 @@ const IndexPage = () => {
       <div className={styles.promotionContainer}>
         <Hero image={'/banner2.png'} title={`-50% off \n All Essentials`} />
         <div className={styles.linkContainers}>
-          <Link to={'/shop'}>WOMAN</Link>
-          <Link to={'/shop'}>MAN</Link>
+          <Link to={'/tienda'}>WOMAN</Link>
+          <Link to={'/tienda'}>MAN</Link>
         </div>
       </div>
 
       {/* Quote */}
       <Quote
         bgColor={'var(--standard-light-grey)'}
-        title={'about Sydney'}
+        title={'Emprendimiento Post Pandemia'}
         quote={
-          '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
+          '“Emprendimiento Post Pandemia.”'
         }
       />
 

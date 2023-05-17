@@ -39,8 +39,8 @@ const ProductPage = (props) => {
           <Breadcrumbs
             crumbs={[
               { link: '/', label: 'Home' },
-              { label: 'Men', link: '/shop' },
-              { label: 'Sweater', link: '/shop' },
+              { label: 'Men', link: '/tienda' },
+              { label: 'Sweater', link: '/tienda' },
               { label: `${sampleProduct.name}` },
             ]}
           />
@@ -84,7 +84,7 @@ const ProductPage = (props) => {
                     fullWidth
                     level={'primary'}
                   >
-                    Add to Bag
+                    Agregar al Carrito
                   </Button>
                 </div>
                 <div
@@ -105,7 +105,7 @@ const ProductPage = (props) => {
 
               <div className={styles.description}>
                 <p>{sampleProduct.description}</p>
-                <span>Product code: {sampleProduct.productCode}</span>
+                <span>Código Producto: {sampleProduct.productCode}</span>
               </div>
 
               <div className={styles.informationContainer}>
@@ -136,7 +136,7 @@ const ProductPage = (props) => {
             </div>
           </div>
           <div className={styles.suggestionContainer}>
-            <h2>You may also like</h2>
+            <h2>También te podría interesar</h2>
             <ProductCardGrid
               spacing
               showSlider
@@ -150,10 +150,10 @@ const ProductPage = (props) => {
         <div className={styles.attributeContainer}>
           <Split
             image={'/cloth.png'}
-            alt={'attribute description'}
-            title={'Sustainability'}
+            alt={'Vender en Línea'}
+            title={'Vender en Línea'}
             description={
-              'We design our products to look good and to be used on a daily basis. And our aim is to inspire people to live with few timeless objects made to last. This is why quality over quantity is a cornerstone of our ethos and we have no interest in trends or seasonal collections.'
+              'Vender en línea ofrece múltiples ventajas, impulsando el crecimiento y éxito de negocios y emprendedores. Al vender en línea, se accede a un mercado global sin limitaciones geográficas, permitiendo llegar a una amplia audiencia y aumentar las ventas. La disponibilidad 24/7 atrae a clientes que buscan comodidad y flexibilidad en sus compras. Además, los costos operativos se reducen significativamente al eliminar la necesidad de un espacio físico y personal dedicado al punto de venta. La venta en línea también facilita la recopilación de datos y análisis de comportamiento del cliente, lo que permite ajustar estrategias de marketing y mejorar la experiencia de usuario. Por último, el comercio electrónico brinda la posibilidad de ofrecer una variedad más amplia de productos y servicios, adaptándose rápidamente a las demandas del mercado.'
             }
             ctaText={'learn more'}
             cta={() => navigate('/blog')}

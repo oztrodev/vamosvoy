@@ -10,10 +10,9 @@ const AccountSuccessPage = (props) => {
     <Layout disablePaddingBottom>
       <Container size={'medium'}>
         <div className={styles.root}>
-          <h1>Account Created</h1>
+          <h1>Cuenta Creada</h1>
           <p>
-            We've sent you a confirmation link to active your account. Please
-            check your email and verify it.
+            Te enviaremos un email dentro de 72 horas con un enlace y un código. Revisa Spam.
           </p>
           <div className={styles.actionContainer}>
             <ActionCard
@@ -24,10 +23,10 @@ const AccountSuccessPage = (props) => {
             />
 
             <ActionCard
-              title={'Shop'}
+              title={'Tienda'}
               icon={'bag'}
-              subtitle={'Continue Shopping'}
-              link={'/shop'}
+              subtitle={'Continue Comprando'}
+              link={'/tienda'}
             />
           </div>
         </div>

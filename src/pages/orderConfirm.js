@@ -25,10 +25,10 @@ const OrderConfirmPage = (props) => {
             />
 
             <ActionCard
-              title={'Shop'}
+              title={'Tienda'}
               icon={'bag'}
-              subtitle={'Continue Shopping'}
-              link={'/shop'}
+              subtitle={'Continue Comprnado'}
+              link={'/tienda'}
             />
 
             <ActionCard
@@ -41,7 +41,7 @@ const OrderConfirmPage = (props) => {
             <ActionCard
               title={'Contacto'}
               icon={'phone'}
-              subtitle={'Reach out to us'}
+              subtitle={'respondemos siempre'}
               link={'/soporte#contact'}
             />
           </div>

@@ -27,11 +27,11 @@ const Header = (prop) => {
   const [search, setSearch] = useState('');
 
   const searchRef = createRef();
-  const bannerMessage = 'Vamos a Crecer Juntos';
+  const bannerMessage = 'VAMOS A CREAR UN MUNDO DE POSIBILIDADES';
   const searchSuggestions = [
-    'Oversize sweaters',
-    'Lama Pajamas',
-    'Candles Cinnamon',
+    'PRODUCTOS',
+    'SERVICIOS',
+    'OFERTAS',
   ];
 
   const handleHover = (navObject) => {

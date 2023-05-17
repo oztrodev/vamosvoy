@@ -36,9 +36,9 @@ const ShopV2Page = (props) => {
         </Container>
         <Banner
           maxWidth={'650px'}
-          name={`Woman`}
+          name={`Productos`}
           subtitle={
-            'Look to our women’s sweaters for modern takes on one-and-done dressing. From midis in bold prints to dramatic floor-sweeping styles and easy all-in-ones, our edit covers every mood.'
+            'En nuestra plataforma VamosVoy.com, ofrecemos a emprendedores y negocios la oportunidad de subir y mostrar sus productos de manera eficiente y atractiva. Nuestra web está diseñada para facilitar la administración y promoción de tus productos, ayudándote a llegar a una audiencia más amplia y potenciar tus ventas.'
           }
         />
         <Container size={'large'} spacing={'min'}>
@@ -71,15 +71,15 @@ const ShopV2Page = (props) => {
             </div>
             <div>
               <div className={styles.metaContainer}>
-                <span className={`standardSpan`}>476 items</span>
+                <span className={`standardSpan`}>46 productos</span>
               </div>
               <ProductCardGrid height={'440px'} data={data}></ProductCardGrid>
             </div>
           </div>
           <div className={styles.loadMoreContainer}>
-            <span>6 of 456</span>
+            <span>6 of 46</span>
             <Button fullWidth level={'secondary'}>
-              LOAD MORE
+              VER MAS
             </Button>
           </div>
         </Container>

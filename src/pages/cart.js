@@ -26,20 +26,20 @@ const CartPage = (props) => {
         <Container size={'large'} spacing={'min'}>
           <div className={styles.headerContainer}>
             <div className={styles.shoppingContainer}>
-              <Link className={styles.shopLink} to={'/shop'}>
+              <Link className={styles.shopLink} to={'/tienda'}>
                 <Icon symbol={'arrow'}></Icon>
                 <span className={styles.continueShopping}>
-                  Continue Shopping
+                  Continue Comprando
                 </span>
               </Link>
             </div>
             <Brand />
             <div className={styles.loginContainer}>
-              <Link to={'/login'}>Login</Link>
+              <Link to={'/login'}>Ingresar</Link>
             </div>
           </div>
           <div className={styles.summaryContainer}>
-            <h3>My Bag</h3>
+            <h3>Mi Canasta</h3>
             <div className={styles.cartContainer}>
               <div className={styles.cartItemsContainer}>
                 <CartItem {...sampleCartItem} />

@@ -16,7 +16,7 @@ import Config from '../config.json';
 
 const ShopPage = (props) => {
   const [showFilter, setShowFilter] = useState(false);
-  const data = generateMockProductData(6, 'woman');
+  const data = generateMockProductData(6, 'productos');
 
   useEffect(() => {
     window.addEventListener('keydown', escapeHandler);
@@ -35,23 +35,23 @@ const ShopPage = (props) => {
           <div className={styles.breadcrumbContainer}>
             <Breadcrumbs
               crumbs={[
-                { link: '/', label: 'Home' },
-                { link: '/', label: 'Woman' },
-                { label: 'Sweaters' },
+                { link: '/', label: 'productos' },
+                { link: '/', label: 'servicios' },
+                { label: 'chalecos' },
               ]}
             />
           </div>
         </Container>
         <Banner
           maxWidth={'650px'}
-          name={`Woman's Sweaters`}
+          name={`Vitrinas Virtuales`}
           subtitle={
-            'Look to our women’s sweaters for modern takes on one-and-done dressing. From midis in bold prints to dramatic floor-sweeping styles and easy all-in-ones, our edit covers every mood.'
+            'Atrae a emprendedores y negocios con vitrinas virtuales que destacan productos y servicios de manera única e innovadora.'
           }
         />
         <Container size={'large'} spacing={'min'}>
           <div className={styles.metaContainer}>
-            <span className={styles.itemCount}>476 items</span>
+            <span className={styles.itemCount}>46 productos</span>
             <div className={styles.controllerContainer}>
               <div
                 className={styles.iconContainer}
@@ -59,12 +59,12 @@ const ShopPage = (props) => {
                 onClick={() => setShowFilter(!showFilter)}
               >
                 <Icon symbol={'filter'} />
-                <span>Filters</span>
+                <span>Filtrar</span>
               </div>
               <div
                 className={`${styles.iconContainer} ${styles.sortContainer}`}
               >
-                <span>Sort by</span>
+                <span>Ordenar</span>
                 <Icon symbol={'caret'} />
               </div>
             </div>
@@ -83,9 +83,9 @@ const ShopPage = (props) => {
             <ProductCardGrid data={data}></ProductCardGrid>
           </div>
           <div className={styles.loadMoreContainer}>
-            <span>6 of 456</span>
+            <span>6 of 46</span>
             <Button fullWidth level={'secondary'}>
-              LOAD MORE
+              ver más
             </Button>
           </div>
         </Container>

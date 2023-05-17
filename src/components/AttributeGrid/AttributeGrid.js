@@ -10,17 +10,17 @@ const AttributeGrid = (props) => {
       <Attribute
         icon={'delivery'}
         title={'free delivery worldwide'}
-        subtitle={'Click to learn more'}
+        subtitle={'Lee los terminos y condiciones'}
       />
       <Attribute
         icon={'cycle'}
         title={'returns'}
-        subtitle={'Return goods in 30 days'}
+        subtitle={'Devolución en 30 días'}
       />
       <Attribute
         icon={'creditcard'}
         title={'secured payment'}
-        subtitle={'Shop safely'}
+        subtitle={'Compra Segura'}
       />
     </div>
   );

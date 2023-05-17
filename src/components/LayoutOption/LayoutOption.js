@@ -9,14 +9,14 @@ const LayoutOption = (props) => {
     <div className={styles.root}>
       <div
         className={styles.layoutIconContainer}
-        onClick={() => navigate('/shopV2')}
+        onClick={() => navigate('/tienda')}
         role={'presentation'}
       >
         <Icon symbol={'list'}></Icon>
       </div>
       <div
         className={styles.layoutIconContainer}
-        onClick={() => navigate('/shop')}
+        onClick={() => navigate('/tienda')}
         role={'presentation'}
         style={{ transform: 'rotate(-90deg)' }}
       >

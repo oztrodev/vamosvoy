@@ -40,7 +40,7 @@ const MiniCart = (props) => {
             checkout
           </Button>
           <div className={styles.linkContainer}>
-            <Link to={'/shop'}>continue shopping</Link>
+            <Link to={'/tienda'}>continue comprando</Link>
           </div>
         </div>
       </div>
