@@ -7,27 +7,39 @@ const ProductCollectionGrid = (props) => {
   return (
     <div className={styles.root}>
       <ProductCollection
-        image={'/collections/collection1.png'}
-        title={'Men'}
-        text={'COMPRAR AHORA'}
+        image={'/collections/vamosvoy-transporte.png'}
+        title={''}
+        text={'Solicitar'}
         link={'/tienda'}
       />
       <ProductCollection
-        image={'/collections/collection2.png'}
-        title={'Women'}
-        text={'COMPRAR AHORA'}
+        image={'/collections/vamosvoy-limpieza.png'}
+        title={''}
+        text={'Solicitar'}
         link={'/tienda'}
       />
       <ProductCollection
-        image={'/collections/collection3.png'}
-        title={'Accessories'}
-        text={'COMPRAR AHORA'}
+        image={'/collections/vamosvoy-cocinamos.png'}
+        title={''}
+        text={'Solicitar'}
         link={'/tienda'}
       />
       <ProductCollection
-        image={'/collections/collection4.png'}
-        title={'Simple Cotton'}
-        text={'COMPRAR AHORA'}
+        image={'/collections/vamosvoy-hacemos-tus-compras.png'}
+        title={''}
+        text={'Solicitar'}
+        link={'/tienda'}
+      />
+      <ProductCollection
+        image={'/collections/vamosvoy-tu-comida-semanal.png'}
+        title={''}
+        text={'Solicitar'}
+        link={'/tienda'}
+      />
+      <ProductCollection
+        image={'/collections/vamosvoy-manicure.png'}
+        title={''}
+        text={'Solicitar'}
         link={'/tienda'}
       />
     </div>
