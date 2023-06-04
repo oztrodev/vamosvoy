@@ -12,7 +12,7 @@ import * as styles from './cart.module.css';
 
 const CartPage = (props) => {
   const sampleCartItem = {
-    image: '/products/pdp1.jpeg',
+    image: '/productos/pdp1.jpeg',
     alt: '',
     name: 'Lambswool Crew Neck Jumper',
     price: 220,
@@ -35,7 +35,7 @@ const CartPage = (props) => {
             </div>
             <Brand />
             <div className={styles.loginContainer}>
-              <Link to={'/login'}>Ingresar</Link>
+              <Link to={'/ingreso'}>Ingresar</Link>
             </div>
           </div>
           <div className={styles.summaryContainer}>

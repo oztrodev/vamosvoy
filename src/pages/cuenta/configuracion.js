@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { navigate } from 'gatsby';
-import * as styles from './settings.module.css';
+import * as styles from './configuracion.module.css';
 
 import AccountLayout from '../../components/AccountLayout';
 import Button from '../../components/Button';
@@ -16,7 +16,7 @@ import {
 
 const SettingsPage = (props) => {
   if (isAuth() === false) {
-    navigate('/login');
+    navigate('/ingreso');
   }
 
   const initialState = {
@@ -52,7 +52,7 @@ const SettingsPage = (props) => {
       if (validateEmail(updateForm.email) !== true) {
         validForm = false;
         tempError.email =
-          'Please use a valid email address, such as user@example.com.';
+          'Ingrese su email, ejemplo: nombreyapellido@gmail.com';
       }
     }
 
@@ -60,12 +60,12 @@ const SettingsPage = (props) => {
       if (validateStrongPassword(updateForm.password) === false) {
         validForm = false;
         tempError.password =
-          'Password must have at least 8 characters, 1 lowercase, 1 uppercase and 1 numeric character.';
+          'Su clave debe tener al menos 8 caracteres, 1 minuscula, 1 mayuscula y 1 caracter numerico';
       }
 
       if (updateForm.password !== updateForm.confirmPassword) {
         validForm = false;
-        tempError.confirmPassword = 'Confirm password not the same.';
+        tempError.confirmPassword = 'Revisar, Claves no Coinciden';
       }
     }
 
@@ -83,12 +83,12 @@ const SettingsPage = (props) => {
       <AccountLayout>
         <Breadcrumbs
           crumbs={[
-            { link: '/', label: 'Home' },
-            { link: '/account', label: 'Account' },
-            { link: '/account/settings', label: 'Settings' },
+            { link: '/', label: 'Inicio' },
+            { link: '/cuenta', label: 'Cuenta' },
+            { link: '/cuenta/configuracion', label: 'Configuracion' },
           ]}
         />
-        <h1>Settings</h1>
+        <h1>Configuración</h1>
         <div>
           <form onSubmit={(e) => handleSubmit(e)} noValidate>
             <div className={styles.nameSection}>
@@ -97,14 +97,14 @@ const SettingsPage = (props) => {
                 value={updateForm.firstName}
                 handleChange={(id, e) => handleChange(id, e)}
                 type={'input'}
-                labelName={'First Name'}
+                labelName={'Nombre'}
               />
               <FormInputField
                 id={'lastName'}
                 value={updateForm.lastName}
                 handleChange={(id, e) => handleChange(id, e)}
                 type={'input'}
-                labelName={'Last Name'}
+                labelName={'Apellido'}
               />
               <FormInputField
                 id={'email'}
@@ -116,14 +116,14 @@ const SettingsPage = (props) => {
               />
             </div>
             <div className={styles.passwordContainer}>
-              <h2>Change Password</h2>
+              <h2>Cambiar Clave</h2>
               <div className={styles.passwordSection}>
                 <FormInputField
                   id={'password'}
                   value={updateForm.password}
                   handleChange={(id, e) => handleChange(id, e)}
                   type={'password'}
-                  labelName={'New Password'}
+                  labelName={'Nueva Clave'}
                   error={error.password}
                 />
                 <FormInputField
@@ -131,11 +131,11 @@ const SettingsPage = (props) => {
                   value={updateForm.confirmPassword}
                   handleChange={(id, e) => handleChange(id, e)}
                   type={'password'}
-                  labelName={'Confirm Password'}
+                  labelName={'Confirmar Clave'}
                   error={error.confirmPassword}
                 />
                 <Button level={'primary'} type={'submit'}>
-                  update
+                  Actualizar
                 </Button>
               </div>
             </div>

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link, navigate } from 'gatsby';
 import { validateEmail, isEmpty } from '../helpers/general';
-import * as styles from './login.module.css';
+import * as styles from './ingreso.module.css';
 
 import AttributeGrid from '../components/AttributeGrid/AttributeGrid';
 import Layout from '../components/Layout/Layout';
 import FormInputField from '../components/FormInputField/FormInputField';
 import Button from '../components/Button';
 
-const LoginPage = (props) => {
+const IngresoPage = (props) => {
   const initialState = {
     email: '',
     password: '',
@@ -35,14 +35,14 @@ const LoginPage = (props) => {
 
     if (validateEmail(loginForm.email) !== true) {
       tempError.email =
-        'Please use a valid email address, such as user@example.com.';
+      'Ingrese su email, ejemplo: nombreyapellido@gmail.com';
       validForm = false;
     } else {
       tempError.email = '';
     }
 
     if (isEmpty(loginForm.password) === true) {
-      tempError.password = 'Field required';
+      tempError.password = 'Campo Requerido';
       validForm = false;
     } else {
       tempError.password = '';
@@ -53,12 +53,12 @@ const LoginPage = (props) => {
 
       //mock login
       if (loginForm.email !== 'error@example.com') {
-        navigate('/account');
+        navigate('/cuenta');
         window.localStorage.setItem('key', 'sampleToken');
       } else {
         window.scrollTo(0, 0);
         setErrorMessage(
-          'There is no such account associated with this email address'
+          'Este email no esta asociado a ninguna cuenta'
         );
       }
     } else {
@@ -79,9 +79,9 @@ const LoginPage = (props) => {
 
       <div className={styles.root}>
         <div className={styles.loginFormContainer}>
-          <h1 className={styles.loginTitle}>Login</h1>
+          <h1 className={styles.loginTitle}>Bienvenid@</h1>
           <span className={styles.subtitle}>
-            Please enter your e-mail and password
+            Por favor ingrese su email y su clave
           </span>
           <form
             noValidate
@@ -102,26 +102,26 @@ const LoginPage = (props) => {
               value={loginForm.password}
               handleChange={(id, e) => handleChange(id, e)}
               type={'password'}
-              labelName={'Password'}
+              labelName={'Clave'}
               error={errorForm.password}
             />
             <div className={styles.forgotPasswordContainer}>
-              <Link to={'/forgot'} className={styles.forgotLink}>
-                Forgot Password
+              <Link to={'/recuperar-clave'} className={styles.forgotLink}>
+                Olvide mi Clave
               </Link>
             </div>
 
             <Button fullWidth type={'submit'} level={'primary'}>
-              LOG IN
+              INGRESAR
             </Button>
-            <span className={styles.createLink}>New Customer? </span>
+            <span className={styles.createLink}>Eres Nuevo? </span>
             <Button
               type={'button'}
-              onClick={() => navigate('/signup')}
+              onClick={() => navigate('/registro')}
               fullWidth
               level={'secondary'}
             >
-              create an account
+              Crea tu Cuenta
             </Button>
           </form>
         </div>
@@ -134,4 +134,4 @@ const LoginPage = (props) => {
   );
 };
 
-export default LoginPage;
+export default IngresoPage;

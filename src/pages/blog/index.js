@@ -27,32 +27,32 @@ const BlogPage = (props) => {
 
         <div className={styles.navContainer}>
           <ThemeLink
-            onClick={() => navigate('/blog/sample')}
-            to={'/blog/sample'}
+            onClick={() => navigate('/blog/ejemplo')}
+            to={'/blog/ejemplo'}
           >
             Todos
           </ThemeLink>
           <ThemeLink
-            onClick={() => navigate('/blog/sample')}
-            to={'/blog/sample'}
+            onClick={() => navigate('/blog/ejemplo')}
+            to={'/blog/ejemplo'}
           >
             Marketing
           </ThemeLink>
           <ThemeLink
-            onClick={() => navigate('/blog/sample')}
-            to={'/blog/sample'}
+            onClick={() => navigate('/blog/ejemplo')}
+            to={'/blog/ejemplo'}
           >
             Programación
           </ThemeLink>
           <ThemeLink
-            onClick={() => navigate('/blog/sample')}
-            to={'/blog/sample'}
+            onClick={() => navigate('/blog/ejemplo')}
+            to={'/blog/ejemplo'}
           >
             Ventas
           </ThemeLink>
           <ThemeLink
-            onClick={() => navigate('/blog/sample')}
-            to={'/blog/sample'}
+            onClick={() => navigate('/blog/ejemplo')}
+            to={'/blog/ejemplo'}
           >
             Inteligencia Artificial
           </ThemeLink>

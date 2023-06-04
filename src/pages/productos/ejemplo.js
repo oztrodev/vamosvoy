@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import * as styles from './sample.module.css';
+import * as styles from './ejemplo.module.css';
 
 import Accordion from '../../components/Accordion';
 import AdjustItem from '../../components/AdjustItem';
@@ -73,7 +73,7 @@ const ProductPage = (props) => {
               </div>
 
               <div className={styles.quantityContainer}>
-                <span>Quantity</span>
+                <span>Cantidad</span>
                 <AdjustItem qty={qty} setQty={setQty} />
               </div>
 

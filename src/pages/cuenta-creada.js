@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from './accountSuccess.module.css';
+import * as styles from './cuenta-creada.module.css';
 
 import ActionCard from '../components/ActionCard';
 import Container from '../components/Container';
@@ -16,10 +16,10 @@ const AccountSuccessPage = (props) => {
           </p>
           <div className={styles.actionContainer}>
             <ActionCard
-              title={'Accounts'}
+              title={'Cuenta'}
               icon={'user'}
-              subtitle={'Check your account settings'}
-              link={'/account/settings'}
+              subtitle={'Revisa tu configuración'}
+              link={'/cuenta/configuracion'}
             />
 
             <ActionCard

@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from './orders.module.css';
+import * as styles from './ordenes.module.css';
 
 import AccountLayout from '../../components/AccountLayout/AccountLayout';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -10,24 +10,24 @@ import { navigate } from 'gatsby';
 
 const OrderPage = (props) => {
   if (isAuth() === false) {
-    navigate('/login');
+    navigate('/ingreso');
   }
 
   const sampleOrder1 = {
     id: '2',
-    orderPlaced: 'Oct 12, 2021',
-    lastUpdate: 'Oct 12, 2021',
-    status: 'pending',
+    orderPlaced: 'Jun 06, 2023',
+    lastUpdate: 'Jun 06, 2023',
+    status: 'pendiente',
     items: [
       {
-        image: '/products/shirt1.jpg',
+        image: '/productos/shirt1.jpg',
         alt: 'order 1 product 1',
         name: 'Lambswool Crew Neck Jumper',
         quantity: '2',
         price: '100',
       },
       {
-        image: '/products/shirt2.jpg',
+        image: '/productos/shirt2.jpg',
         alt: 'order 1 product 2',
         name: 'Lambswool Crew Neck Jumper',
         quantity: '1',
@@ -52,12 +52,12 @@ const OrderPage = (props) => {
 
   const sampleOrder2 = {
     id: '1',
-    orderPlaced: 'Oct 11, 2021',
-    lastUpdate: 'Oct 11, 2021',
-    status: 'pending',
+    orderPlaced: 'Jun 04, 2023',
+    lastUpdate: 'Jun 05, 2023',
+    status: 'Pagado',
     items: [
       {
-        image: '/products/shirt1.jpg',
+        image: '/productos/shirt1.jpg',
         alt: 'order 1 product 1',
         name: 'Lambswool Crew Neck Jumper',
         quantity: '2',
@@ -85,17 +85,17 @@ const OrderPage = (props) => {
       <AccountLayout>
         <Breadcrumbs
           crumbs={[
-            { link: '/', label: 'Home' },
-            { link: '/account', label: 'Account' },
-            { link: '/account/orders/', label: 'Orders' },
+            { link: '/', label: 'Inicio' },
+            { link: '/cuenta', label: 'Cuenta' },
+            { link: '/cuenta/ordenes/', label: 'Ordenes' },
           ]}
         />
-        <h1>Orders</h1>
+        <h1>Ordenes</h1>
         <div className={`${styles.tableHeaderContainer} ${styles.gridStyle}`}>
-          <span className={styles.tableHeader}>Order #</span>
-          <span className={styles.tableHeader}>Order Placed</span>
-          <span className={styles.tableHeader}>Last Update</span>
-          <span className={styles.tableHeader}>Status</span>
+          <span className={styles.tableHeader}>Orden #</span>
+          <span className={styles.tableHeader}>Servicio</span>
+          <span className={styles.tableHeader}>Última Actualización</span>
+          <span className={styles.tableHeader}>Estado</span>
         </div>
 
         <OrderItem order={sampleOrder1} headerStyling={styles.gridStyle} />

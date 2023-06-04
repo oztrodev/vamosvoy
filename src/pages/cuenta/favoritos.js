@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { navigate } from 'gatsby';
-import * as styles from './favorites.module.css';
+import * as styles from './favoritos.module.css';
 
 import Button from '../../components/Button';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -15,26 +15,26 @@ const FavoritesPage = (props) => {
   const sampleFavorite1 = {
     color: 'Anthracite Melange',
     size: 'XS',
-    img: '/products/shirt1.jpg',
+    img: '/producto/shirt1.jpg',
     alt: 'favorite 1',
   };
 
   const sampleFavorite2 = {
     color: 'Purple Pale',
     size: 'XS',
-    img: '/products/shirt2.jpg',
-    alt: 'favorite 2',
+    img: '/producto/shirt2.jpg',
+    alt: 'favorito 2',
   };
 
   const sampleFavorite3 = {
     color: 'Moss Green',
     size: 'S',
-    img: '/products/shirt3.jpg',
-    alt: 'favorite 3',
+    img: '/producto/shirt3.jpg',
+    alt: 'favorito 3',
   };
 
   if (isAuth() === false) {
-    navigate('/login');
+    navigate('/ingreso');
   }
 
   const [showDelete, setShowDelete] = useState(false);
@@ -46,7 +46,7 @@ const FavoritesPage = (props) => {
           <Breadcrumbs
             crumbs={[
               { link: '/', label: 'Home' },
-              { link: '/account/favorites', label: 'Favorites' },
+              { link: '/cuenta/favoritos', label: 'Favoritos' },
             ]}
           />
           <h1>Favorites</h1>

@@ -47,7 +47,7 @@ const Header = (prop) => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    navigate(`/search?q=${search}`);
+    navigate(`/buscar?q=${search}`);
     setShowSearch(false);
   };
 
@@ -120,7 +120,7 @@ const Header = (prop) => {
           <Brand />
           <div className={styles.actionContainers}>
             <button
-              aria-label="Search"
+              aria-label="Buscar"
               className={`${styles.iconButton} ${styles.iconContainer}`}
               onClick={() => {
                 setShowSearch(!showSearch);
@@ -129,21 +129,21 @@ const Header = (prop) => {
               <Icon symbol={'search'}></Icon>
             </button>
             <Link
-              aria-label="Favorites"
-              href="/account/favorites"
+              aria-label="Favoritos"
+              href="/cuenta/favoritos"
               className={`${styles.iconContainer} ${styles.hideOnMobile}`}
             >
               <Icon symbol={'heart'}></Icon>
             </Link>
             <Link
-              aria-label="Orders"
-              href={isAuth() ? '/login' : '/account/orders/'}
+              aria-label="Ordenes"
+              href={isAuth() ? '/ingreso' : '/cuenta/ordenes/'}
               className={`${styles.iconContainer} ${styles.hideOnMobile}`}
             >
               <Icon symbol={'user'}></Icon>
             </Link>
             <button
-              aria-label="Cart"
+              aria-label="Carrito"
               className={`${styles.iconButton} ${styles.iconContainer} ${styles.bagIconContainer}`}
               onClick={() => {
                 setShowMiniCart(true);
@@ -167,7 +167,7 @@ const Header = (prop) => {
             showSearch === true ? styles.show : styles.hide
           }`}
         >
-          <h4>What are you looking for?</h4>
+          <h4>Que estás buscando?</h4>
           <form className={styles.searchForm} onSubmit={(e) => handleSearch(e)}>
             <FormInputField
               ref={searchRef}
@@ -185,7 +185,7 @@ const Header = (prop) => {
                 role={'presentation'}
                 onClick={() => {
                   setShowSearch(false);
-                  navigate(`/search?q=${suggestion}`);
+                  navigate(`/buscar?q=${suggestion}`);
                 }}
                 key={index}
                 className={styles.suggestion}

@@ -3,9 +3,9 @@ import Button from '../Button';
 
 import FormInputField from '../FormInputField/FormInputField';
 
-import * as styles from './Contact.module.css';
+import * as styles from './contacto.module.css';
 
-const Contact = (props) => {
+const Contacto = (props) => {
   const initialState = {
     name: '',
     phone: '',
@@ -98,4 +98,4 @@ const Contact = (props) => {
   );
 };
 
-export default Contact;
+export default Contacto;

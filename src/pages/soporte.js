@@ -3,7 +3,7 @@ import { navigate } from 'gatsby';
 import * as styles from './soporte.module.css';
 
 import Banner from '../components/Banner';
-import Contact from '../components/Contact';
+import Contacto from '../components/contacto';
 import Layout from '../components/Layout/Layout';
 import ThemeLink from '../components/ThemeLink';
 import Politicas from '../components/Politicas';
@@ -17,7 +17,7 @@ const SoportePage = (props) => {
     { title: 'Compras', key: 'compras' },
     { title: 'Políticas de Privacidad', key: 'politicas' },
     { title: 'Seguridad', key: 'seguridad' },
-    { title: 'Contacto', key: 'contact' },
+    { title: 'Contacto', key: 'contacto' },
     { title: 'Terminos y Condiciones', key: 'terminos' },
   ];
 
@@ -36,8 +36,8 @@ const SoportePage = (props) => {
       case 'seguridad':
         tempElement = <Seguridad />;
         break;
-      case 'contact':
-        tempElement = <Contact />;
+      case 'contacto':
+        tempElement = <Contacto />;
         break;
       case 'terminos':
         tempElement = <Terminos />;

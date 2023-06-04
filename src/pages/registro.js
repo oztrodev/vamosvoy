@@ -5,14 +5,14 @@ import {
   validateStrongPassword,
   isEmpty,
 } from '../helpers/general';
-import * as styles from './signup.module.css';
+import * as styles from './registro.module.css';
 
 import AttributeGrid from '../components/AttributeGrid/AttributeGrid';
 import Layout from '../components/Layout/Layout';
 import FormInputField from '../components/FormInputField/FormInputField';
 import Button from '../components/Button';
 
-const SignupPage = (props) => {
+const RegistroPage = (props) => {
   const initialState = {
     firstName: '',
     lastName: '',
@@ -41,30 +41,30 @@ const SignupPage = (props) => {
     const tempError = { ...errorState };
 
     if (isEmpty(signupForm.firstName) === true) {
-      tempError.firstName = 'Field required';
+      tempError.firstName = 'Ingrese su Nombre';
       validForm = false;
     }
 
     if (isEmpty(signupForm.lastName) === true) {
-      tempError.lastName = 'Field required';
+      tempError.lastName = 'Ingrese su Apellido';
       validForm = false;
     }
 
     if (validateEmail(signupForm.email) !== true) {
       tempError.email =
-        'Please use a valid email address, such as user@example.com.';
+        'Ingrese su email, ejemplo: nombreyapellido@gmail.com';
       validForm = false;
     }
 
     if (validateStrongPassword(signupForm.password) !== true) {
       tempError.password =
-        'Password must have at least 8 characters, 1 lowercase, 1 uppercase and 1 numeric character.';
+        'Su clave debe tener al menos 8 caracteres, 1 minuscula, 1 mayuscula y 1 caracter numerico.';
       validForm = false;
     }
 
     if (validForm === true) {
       setErrorForm(errorState);
-      navigate('/accountSuccess');
+      navigate('/cuenta-creada');
       window.localStorage.setItem('key', 'sampleToken');
       //create account endpoint
     } else {
@@ -76,9 +76,9 @@ const SignupPage = (props) => {
     <Layout disablePaddingBottom={true}>
       <div className={styles.root}>
         <div className={styles.signupFormContainer}>
-          <h1 className={styles.title}>Create Account</h1>
+          <h1 className={styles.title}>Crear Cuenta</h1>
           <span className={styles.subtitle}>
-            Please enter your the information below:
+            Por favor complete la siguiente información:
           </span>
           <form
             noValidate
@@ -90,7 +90,7 @@ const SignupPage = (props) => {
               value={signupForm.firstName}
               handleChange={(id, e) => handleChange(id, e)}
               type={'input'}
-              labelName={'First Name'}
+              labelName={'Nombre'}
               error={errorForm.firstName}
             />
 
@@ -99,7 +99,7 @@ const SignupPage = (props) => {
               value={signupForm.lastName}
               handleChange={(id, e) => handleChange(id, e)}
               type={'input'}
-              labelName={'Last Name'}
+              labelName={'Apellido Name'}
               error={errorForm.lastName}
             />
 
@@ -117,21 +117,21 @@ const SignupPage = (props) => {
               value={signupForm.password}
               handleChange={(id, e) => handleChange(id, e)}
               type={'password'}
-              labelName={'Password'}
+              labelName={'Clave'}
               error={errorForm.password}
             />
 
             <Button fullWidth type={'submit'} level={'primary'}>
-              create account
+              Crear Cuenta
             </Button>
-            <span className={styles.reminder}>Have an account?</span>
+            <span className={styles.reminder}>Ya tienes cuenta?</span>
             <Button
               type={'button'}
-              onClick={() => navigate('/login')}
+              onClick={() => navigate('/ingreso')}
               fullWidth
               level={'secondary'}
             >
-              log in
+              Ingresar
             </Button>
           </form>
         </div>
@@ -144,4 +144,4 @@ const SignupPage = (props) => {
   );
 };
 
-export default SignupPage;
+export default RegistroPage;

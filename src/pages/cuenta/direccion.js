@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { navigate } from 'gatsby';
-import * as styles from './address.module.css';
+import * as styles from './direccion.module.css';
 
 import AccountLayout from '../../components/AccountLayout';
 import AddressCard from '../../components/AddressCard';
@@ -37,7 +37,7 @@ const AddressPage = (props) => {
   const [showDelete, setShowDelete] = useState(false);
 
   if (isAuth() === false) {
-    navigate('/login');
+    navigate('/ingreso');
   }
 
   return (
@@ -45,12 +45,12 @@ const AddressPage = (props) => {
       <AccountLayout>
         <Breadcrumbs
           crumbs={[
-            { link: '/', label: 'Home' },
-            { link: '/account', label: 'Account' },
-            { link: '/account/address', label: 'Addresses' },
+            { link: '/', label: 'Inicio' },
+            { link: '/cuenta', label: 'Cuenta' },
+            { link: '/cuenta/direccion', label: 'Dirección' },
           ]}
         />
-        <h1>Addresses</h1>
+        <h1>Dirección</h1>
 
         {showForm === false && (
           <div className={styles.addressListContainer}>
@@ -69,7 +69,7 @@ const AddressPage = (props) => {
               onClick={() => setShowForm(true)}
             >
               <Icon symbol={'plus'}></Icon>
-              <span>new address</span>
+              <span>Nueva Dirección</span>
             </div>
           </div>
         )}
@@ -80,17 +80,16 @@ const AddressPage = (props) => {
       </AccountLayout>
       <Modal visible={showDelete} close={() => setShowDelete(false)}>
         <div className={styles.confirmDeleteContainer}>
-          <h4>Delete Address?</h4>
+          <h4>Eliminar Dirección?</h4>
           <p>
-            Are you sure you want to delete this address? You cannot undo this
-            action once you press <strong>'Delete'</strong>
+            Estás seguro que deseas eliminar ??? <strong>'Eliminar'</strong>
           </p>
           <div className={styles.actionContainer}>
             <Button onClick={() => setShowDelete(false)} level={'primary'}>
-              Delete
+              Eliminar
             </Button>
             <Button onClick={() => setShowDelete(false)} level={'secondary'}>
-              Cancel
+              Cancelar
             </Button>
           </div>
         </div>

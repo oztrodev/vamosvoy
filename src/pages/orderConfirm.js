@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from './accountSuccess.module.css';
+import * as styles from './cuenta-creada.module.css';
 
 import ActionCard from '../components/ActionCard';
 import Container from '../components/Container';
@@ -10,17 +10,17 @@ const OrderConfirmPage = (props) => {
     <Layout disablePaddingBottom>
       <Container size={'medium'}>
         <div className={styles.root}>
-          <h1>Thank You!</h1>
+          <h1>Muchas Gracias!</h1>
           <p>
-            We are now processing your order. If you have any concerns feel free
-            to email us at customerservice@example.com
+            Hemos recibido tu compra y nos pondremos en contacto pronto.
+            Te escribiremos desde nuestro email vamosvoy@gmail.com
           </p>
           <div className={styles.actionContainer}>
             <ActionCard
-              title={'Order Status'}
-              icon={'delivery'}
-              subtitle={'Check your order status'}
-              link={'/account/orders'}
+              title={'Estado de la Orden'}
+              icon={'Finalizada'}
+              subtitle={'Revisa tu orden'}
+              link={'/cuenta/ordenes'}
               size={'lg'}
             />
 
@@ -32,17 +32,17 @@ const OrderConfirmPage = (props) => {
             />
 
             <ActionCard
-              title={'FAQs'}
+              title={'Preguntas Frecuentes'}
               icon={'question'}
-              subtitle={'Check out FAQs page'}
-              link={'/faq'}
+              subtitle={'Revisa las Preguntas Frecuentes'}
+              link={'/preguntas-frecuentes'}
             />
 
             <ActionCard
               title={'Contacto'}
               icon={'phone'}
               subtitle={'respondemos siempre'}
-              link={'/soporte#contact'}
+              link={'/soporte#contacto'}
             />
           </div>
         </div>

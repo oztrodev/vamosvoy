@@ -30,8 +30,8 @@ const MobileNavigation = (props) => {
         <div className={styles.headerAuth}>
           {depth === 0 && isAuth() === false && (
             <div className={styles.authLinkContainer}>
-              <Link to={'/signup'}>Sign Up</Link>
-              <Link to={'/login'}>Login</Link>
+              <Link to={'/registro'}>Registro</Link>
+              <Link to={'/ingreso'}>Ingreso</Link>
             </div>
           )}
 
@@ -41,7 +41,7 @@ const MobileNavigation = (props) => {
               role={'presentation'}
               onClick={() => setDepth(-1)}
             >
-              <span className={styles.welcomeMessage}>Welcome, John</span>
+              <span className={styles.welcomeMessage}>Bienvenido</span>
               <Icon symbol={'caret'}></Icon>
             </div>
           )}
@@ -55,7 +55,7 @@ const MobileNavigation = (props) => {
               <div className={styles.previousIcon}>
                 <Icon symbol={'caret'}></Icon>
               </div>
-              <span>my account</span>
+              <span>Mi Cuenta</span>
             </div>
           )}
 
@@ -111,9 +111,9 @@ const MobileNavigation = (props) => {
                 );
               })}
               <div className={styles.navFooter}>
-                <Link to={'/favorites'}>
+                <Link to={'/favoritos'}>
                   <Icon symbol={'heart'} />
-                  Favorites (0)
+                  Favoritos (0)
                 </Link>
               </div>
             </div>
@@ -153,17 +153,17 @@ const MobileNavigation = (props) => {
           {depth === -1 && (
             <>
               <div>
-                <Link to={'/account/orders/'} className={styles.mobileLink}>
-                  Orders
+                <Link to={'/cuenta/ordenes/'} className={styles.mobileLink}>
+                  Ordenes
                 </Link>
-                <Link to={'/account/address/'} className={styles.mobileLink}>
-                  Addresses
+                <Link to={'/cuenta/direccion/'} className={styles.mobileLink}>
+                  Direcciones
                 </Link>
-                <Link to={'/account/settings/'} className={styles.mobileLink}>
-                  Settings
+                <Link to={'/cuenta/configuracion/'} className={styles.mobileLink}>
+                  Configuración
                 </Link>
-                <Link to={'/account/viewed/'} className={styles.mobileLink}>
-                  Recently Viewed
+                <Link to={'/cuenta/vistos/'} className={styles.mobileLink}>
+                  Vistos Recientemente
                 </Link>
               </div>
               <div className={styles.navFooter}>
@@ -172,8 +172,8 @@ const MobileNavigation = (props) => {
                   role={'presentation'}
                   onClick={handleLogout}
                 >
-                  <Icon symbol={'logout'} />
-                  <span>Sign out </span>
+                  <Icon symbol={'salir'} />
+                  <span>Salir </span>
                 </div>
               </div>
             </>

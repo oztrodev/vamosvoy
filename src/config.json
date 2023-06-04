@@ -12,10 +12,10 @@
     { "value": "mandarin", "label": "普通话" }
   ],
   "social": {
-    "facebook": "http://lyksoomu.com/1Bqzy",
-    "instagram": "http://lyksoomu.com/1Br0n",
-    "twitter": "http://lyksoomu.com/1Bqzy",
-    "youtube": "http://lyksoomu.com/1Br0n"
+    "facebook": "https://www.facebook.com/VamosVoy.TuVitrinaVirtual",
+    "instagram": "https://www.instagram.com/vamosvoy/",
+    "twitter": "https://www.facebook.com/VamosVoy.TuVitrinaVirtual",
+    "youtube": "https://www.instagram.com/vamosvoy/"
   },
   "paymentOptions": {
     "visa": true,
@@ -49,7 +49,7 @@
         },
         {
           "text": "Contáctanos",
-          "link": "/soporte#contact"
+          "link": "/soporte#contacto"
         },
         {
           "text": "Compras y Devoluciones",

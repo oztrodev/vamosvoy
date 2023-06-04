@@ -1,6 +1,6 @@
 import React from 'react';
 import { navigate } from 'gatsby';
-import * as styles from './viewed.module.css';
+import * as styles from './vistas.module.css';
 
 import AccountLayout from '../../components/AccountLayout';
 import Breadcrumbs from '../../components/Breadcrumbs';
@@ -14,7 +14,7 @@ const RecentlyViewedPage = (props) => {
   const recentlyViewed = generateMockProductData(3, 'shirt');
 
   if (isAuth() === false) {
-    navigate('/login');
+    navigate('/ingreso');
   }
 
   return (
@@ -23,12 +23,12 @@ const RecentlyViewedPage = (props) => {
         <Breadcrumbs
           crumbs={[
             { link: '/', label: 'Home' },
-            { link: '/account', label: 'Account' },
-            { link: '/account/viewed', label: 'Recently Viewed' },
+            { link: '/cuenta', label: 'Cuenta' },
+            { link: '/cuenta/vistos', label: 'Vistos Recientemente' },
           ]}
         />
         <div className={styles.root}>
-          <h1>Recently Viewed</h1>
+          <h1>Vistos Recientemente</h1>
           <div className={styles.gridContainer}>
             <ProductCardGrid
               spacing={true}

@@ -13,31 +13,31 @@ const AccountNav = (props) => {
       <div className={styles.webRoot}>
         <Link
           activeClassName={styles.activeLink}
-          to={'/account/orders/'}
+          to={'/cuenta/ordenes/'}
           className={styles.webLink}
         >
-          Orders
+          Ordenes
         </Link>
         <Link
           activeClassName={styles.activeLink}
-          to={'/account/address/'}
+          to={'/cuenta/direccion/'}
           className={styles.webLink}
         >
-          Addresses
+          Direcciones
         </Link>
         <Link
           activeClassName={styles.activeLink}
-          to={'/account/settings/'}
+          to={'/cuenta/configuracion/'}
           className={styles.webLink}
         >
-          Settings
+          Configuración
         </Link>
         <Link
           activeClassName={styles.activeLink}
-          to={'/account/viewed/'}
+          to={'/cuenta/vistas/'}
           className={styles.webLink}
         >
-          Recently Viewed
+          Vistos Recientemente
         </Link>
         <span
           role={'presentation'}
